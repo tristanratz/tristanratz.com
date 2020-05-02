@@ -53,11 +53,6 @@ export class Contact extends React.Component<Props, State> {
                                 © by {person.firstName} {person.lastName}
                             </a>
                         </label>
-                        <label>
-                            <a href="tristanratz.com">
-                                Template by Tristan Ratz
-                            </a>
-                        </label>
                     </div>
                 </Fade>
                 {retrieveImprint() &&

@@ -1,5 +1,4 @@
-import React, {useEffect} from "react";
-import {Icons} from "../Icons";
+import React from "react";
 
 interface Props {
     section: string,
@@ -22,7 +21,7 @@ export class NavigationItem extends React.Component<Props> {
 
     handleClick(event: React.MouseEvent) {
         event.preventDefault();
-        this.section.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        this.section.scrollIntoView({ behavior: 'smooth' });
     };
 
     render(): React.ReactElement| null | undefined {
