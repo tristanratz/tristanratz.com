@@ -42,7 +42,7 @@ export const Aboutcards = (props: Props) => (
             <p>
                 {person.interests.map((interest,i) => {
                     const last = i+1 ===  person.interests.length;
-                    return (<text>{interest}{(!last) ? (<text>, <br /></text>) : null}</text>)
+                    return (<text key={i}>{interest}{(!last) ? (<text>, <br /></text>) : null}</text>)
                 })}
             </p>
         </Card>

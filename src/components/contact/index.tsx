@@ -33,13 +33,21 @@ export class Contact extends React.Component<Props, State> {
                             <label>Mail</label>
                             <a className="contact" href={"mailto:" + person.email}>{person.email}</a>
                         </p>
-
+                        {person.phone && (
+                            <p>
+                                <label>Telephone</label>
+                                {person.phone}<br />
+                                {(person.phoneHours) ? person.phoneHours : null }
+                            </p>
+                        )}
                         <p>
                             <label>Area</label>
                             {person.city}, {person.country}
                         </p>
-                        <label>Links</label>
-                        <p><Icons /></p>
+                        <div className="paragraph">
+                            <label>Links</label>
+                            <Icons />
+                        </div>
 
                         {retrieveImprint() &&
                             <p className="imprint"

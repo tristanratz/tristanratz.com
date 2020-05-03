@@ -138,19 +138,19 @@ export class About extends React.Component<Props, State> {
                                     <p>{person.firstName} {person.lastName}</p>
 
                                     <label>About</label>
-                                    <p>
-                                        {person.about.map((paragraph) => (
-                                            <p>
+                                    <div className="paragraph">
+                                        {person.about.map((paragraph,i) => (
+                                            <p key={i}>
                                                 {paragraph}
                                             </p>
                                         ))}
-                                    </p>
+                                    </div>
                                     <label>Mail</label>
                                     <p>
                                         <a className="contact" href={"mailto:" +person.email}>{person.email}</a>
                                     </p>
                                     <label>Links</label>
-                                    <p><Icons /></p>
+                                    <div className="paragraph"><Icons /></div>
                                 </div>
                             </Fade>
                         </div>

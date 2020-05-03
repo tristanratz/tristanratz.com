@@ -67,6 +67,7 @@ export class ProjectNavigation extends React.Component<Props, State>{
 
                     {this.props.projects.map((p, i) => (
                         <div className="bullets"
+                             key={i}
                              onClick={onClick("click", i)}
                              onMouseEnter={() => this.handleMouse("enter", i)}
                              onMouseLeave={() => this.handleMouse("leave", i)}>

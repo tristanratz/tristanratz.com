@@ -68,8 +68,8 @@ export class Project extends React.Component<Props> {
                             (this.project.technologies.length-1 > i) ? `${t}, ` : t // So that the last tech has no comma
                         ))}</h5>
                         <strong>{this.project.description}</strong>
-                        {this.project.text.map((paragraph) => (
-                            <p>{paragraph}</p>
+                        {this.project.text.map((paragraph,i) => (
+                            <p key={i}>{paragraph}</p>
                         ))}
 
                         {(this.project.github || this.project.link) && <label>See more:</label>}
