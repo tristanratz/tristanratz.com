@@ -13,7 +13,7 @@ export const retrieveImprint = ():React.ReactElement | undefined => (
             64521 Groß-Gerau,<br/>
             Deutschland
             <br/><br/>
-            {/*Tel.: 01234/56789<br/>*/}
+            Tel.: 06150/1833114<br/>
             E-Mail: contact@tristanratz.com<br/>
             <br/><br/>
             Quelle: Erstellt mit dem Impressum Generator von AdSimple in Kooperation mit 123familie.de
