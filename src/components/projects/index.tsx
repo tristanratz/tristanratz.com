@@ -90,13 +90,10 @@ export class Projects extends React.Component<Props, State> {
                 <h1>Projects</h1>
                 <div className="projectsWindow">
                     <div className="projectsWrapper" style={wrapperTransform}>
-                        {projects.map((project, i) => {
-                            console.log(i)
-                            return (
+                        {projects.map((project, i) => (
                                 <Project project={project} open={i === this.state.openElement} onClick={
                                     (event:ClickEvent) => this.handleClickEvent(event, i)} active={i === this.state.activeElement} key={i}/>
-                            );
-                        })}
+                                    ))}
                     </div>
                 </div>
                 <ProjectNavigation projects={projects} active={this.state.activeElement} onClick={this.handleClickEvent} />

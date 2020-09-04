@@ -1,5 +1,18 @@
 [
   {
+    "name": "Podcast",
+    "technologies": ["Object Detection", "NLP", "Deep Learning", "Banking"],
+    "description": "You can hear me in a podcast!",
+    "text": ["In a world of changing customer expectations it is even more important to make products and workflows simpler and easier to use.",
+      "This is what we tried to do with 'Fotofinanzierung'. Fotofinanzierung is a Service where you can scan a price tag and get an immediate financing offer from your bank.",
+      "I will tell you about the technologies we have used, our view on privacy and more in our podcast.",
+      "The podcast is available on german on all major platforms, including Apple Podcast, Google Podcast and Spotify."],
+    "language": "en",
+    "image": "none",
+    "date": "2020",
+    "link": "https://anchor.fm/kixperts/episodes/04-KI-Fotofinanzierung-mit-Tobias--Stephan-und-Tristan-eipguk/a-a32frr8"
+  },
+  {
     "name": "Homepage",
     "technologies": ["React", "JavaScript", "HTML", "SCSS", "AWS"],
     "description": "This website was created using modern web technologies. The source code is available at Github.",
@@ -21,8 +34,8 @@
       "Our system was working more accurate and even faster than existing solutions (like cdQA by PNB Paribas)."],
     "language": "en",
     "image": "none",
-    "date": "2019"
-
+    "date": "2019",
+    "link": "https://medium.com/@tristanratz/building-a-question-answering-system-bb49c320140c"
   },
   {
     "name": "ChatApp",
