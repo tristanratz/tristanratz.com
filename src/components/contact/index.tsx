@@ -52,7 +52,7 @@ export class Contact extends React.Component<Props, State> {
                         {retrieveImprint() &&
                             <p className="imprint"
                                onClick={() => this.setState({showImprint: true})}>
-                                Impring & Privacy
+                                Imprint & Privacy
                             </p>
                         }
 
