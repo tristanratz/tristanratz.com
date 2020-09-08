@@ -36,6 +36,7 @@ export const person:Person = {
     instagram: "https://www.instagram.com/tristan.ratz/",
     github: "https://www.github.com/tristanratz",
     linkedin: "https://www.linkedin.com/in/tristan-ratz-a45680120",
+    medium: "https://medium.com/@tristanratz",
     city: "Darmstadt",
     locationHint: "near Frankfurt",
     state: "Hesse",
