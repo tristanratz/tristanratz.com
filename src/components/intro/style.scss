@@ -10,20 +10,39 @@
   text-align: center;
   transform-origin: center center;
   perspective: 2000px;
+  background: black;
+
+  #background-video{
+
+    min-height: 100%;
+    min-width: 100%;
+    float: left;
+    background: rgba(0,0,0,0.5);
+    z-index: -5;
+    top: 0;
+    left: 0;
+    opacity: 0.7;
+    padding: none;
+    position: absolute;
+    transform: translateZ(-100px) scale(1.2);
+    
+  }
 
   .effectWrapper {
     .effect {
       position: absolute;
-      color: $accentColor;
+      color: rgba(255,255,255,0.2);
       transform-origin: inherit;
       //font-size: 23vw;
       font-size: 11.5vw;
       font-weight: bolder;
       // color: rgba(0,0,0,0.2);
-      opacity: 0.5;
+      opacity: 1;
       top: 50%;
       left: 50%;
       transform: translate(-50%, -50%);
+      -webkit-text-stroke-width: 10px;
+      -webkit-text-stroke-color: #fff;
     }
   }
 
@@ -75,11 +94,13 @@ Navigation
   top: 60%;
   left: 50%;
   transform: translateX(-50%);
-  //box-shadow: 0 0 20px rgba(0,0,0,0.2);
+  box-shadow: 0 0 20px rgba(0,0,0,0.2);
   color: $accentColor;
   padding: 2rem;
   opacity: 0.9;
-  border-top: 1px $accentColor solid;
+  border-radius: $borderradius;
+  //border-top: 1px $accentColor solid;
+  background: white;
 
   a {
     align-self: center;

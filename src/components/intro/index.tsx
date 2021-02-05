@@ -5,6 +5,7 @@ import {
     IoMdArrowDown
 } from "react-icons/io"
 import {person} from "../../store/person";
+import Titelfilm from "../../rsc/Titelfilm.m4v";
 
 interface State {
     positionX: number;
@@ -66,7 +67,7 @@ export class Intro extends React.Component<Props, State> {
 
         const fnameStyle = {
             transform: "translate3d(" + ((-this.state.positionX + this.state.width/2)/16 - fNameWidth/2) + "px, " +
-                ((-this.state.positionY - this.state.height)/16 - fNameHeight*0.75) + "px, 0)" +
+                ((-this.state.positionY - this.state.height)/16 - fNameHeight*0.75) + "px, 0)"+
                 "rotate3d(" + (-1*(this.state.positionY - this.state.height/2)/10)/(this.state.height/2) + ", "
                 + ((this.state.positionX - this.state.width/2)/10)/(this.state.width/2) +", 0,10deg)",
             zIndex: 2,
@@ -76,9 +77,9 @@ export class Intro extends React.Component<Props, State> {
 
         const lnameStyle = {
             transform: "translate3d(" + ((-this.state.positionX + this.state.width/2)/8 - lNameWidth/2) + "px, " +
-                (((-this.state.positionY - this.state.height)/8))+ "px, 0) " +
-                "rotate3d(" + (-1*(this.state.positionY - this.state.height/2)/100)/(this.state.height/2) + ", "
-                + ((this.state.positionX - this.state.width/2)/100)/(this.state.width/2) +", 0,10deg)",
+                (((-this.state.positionY - this.state.height)/8))+ "px, 0) "+
+                 "rotate3d(" + (-1*(this.state.positionY - this.state.height/2)/100)/(this.state.height/2) + ", "
+                 + ((this.state.positionX - this.state.width/2)/100)/(this.state.width/2) +", 0,10deg)",
             zIndex: 3,
         };
 
@@ -86,17 +87,26 @@ export class Intro extends React.Component<Props, State> {
             <div ref={this.wrappingElement}
                  className="intro" id="intro"
                  onMouseMove={this.mouseMoved.bind(this)}>
-                <div className="effectWrapper"
-                     ref={this.effectElement}>
-                    <div ref={this.fName} className="effect" style={fnameStyle}>{person.firstName.toUpperCase()}</div>
-                    <div ref={this.lName} className="effect" style={lnameStyle}>{person.lastName.toUpperCase()}</div>
-                </div>
-                <Navigation/>
-                <div className="downArrow"
-                onClick={() => {
-                    this.nextSection!.scrollIntoView({ behavior: 'smooth', block: 'start' });
-                }}
-                ><IoMdArrowDown /></div>
+                     <div className={"titleElement"}>
+
+                     
+                        <div className="effectWrapper"
+                            ref={this.effectElement}>
+                            <div ref={this.fName} className="effect" style={fnameStyle}>{person.firstName.toUpperCase()}</div>
+                            <div ref={this.lName} className="effect" style={lnameStyle}>{person.lastName.toUpperCase()}</div>
+                        </div>
+                        <Navigation/>
+                    </div>
+                    <div className="downArrow"
+                    onClick={() => {
+                        this.nextSection!.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                    }}
+                    ><IoMdArrowDown /></div>
+                    <video id="background-video" loop autoPlay muted>
+                        <source src={Titelfilm} type="video/mp4" />
+                        <source src={Titelfilm} type="video/ogg" />
+                        Your browser does not support the video tag.
+                    </video>
             </div>);
     }
 }

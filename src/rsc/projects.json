@@ -1,5 +1,20 @@
 [
   {
+    "name": "Interactive Image Segmentation",
+    "technologies": ["Python", "Tensorflow", "Label Studio", "Computer Vision", "Image Segmentation", "Machine Learning", "Bachelor Thesis"],
+    "description": "In 2021 I wrote a machine learning tool, that provided the user with image segmentation proposals to accelerate the labeling process. The tool was subject of my bachelor thesis.",
+    "text": ["High quality annotated data has become an increasingly important factor for successful data science and deep learning projects. However, a major issue is that the creation, preprocessing, and labeling of training data can get very expensive, hence a research field called interactive labeling has been built around that topic.",
+      "Interactive labeling aims at facilitating the labeling process considerably and at making machine learning accessible for people unfamiliar with the matter. While much research has already been conducted in this field, not much of that work has been published open-source. My bachelor thesis, I present an open-source software extension to Label Studio1, an open-source multi-domain labeling tool. This extension will enable Label Studio with interactive learning capabilities in order to make labeling more feasible, less cost-intensive, and deep learning more accessible.",
+      "The user first has to label a small set of images manually and is then provided with labeling predictions, which the user can refine or reject. With increasing amount of labeled images the accuracy should rise, and the user will be able to obtain a working machine learning model that successfully pre-labels the data.",
+      "In my tests with the extension added to Label Studio, I was able to achieve an acceleration of labeling time up to 142.1% on average over manual labeling with a precision of 99.3% and a recall of 65.9%.",
+      "In summary, I successfully developed an open-source, instance segmentation, interactive labeling extension for Label Studio that decreases labeling time and provides the user with a working Mask R-CNN model.",
+      "The source code is available on GitHub."],
+    "language": "en",
+    "image": "none",
+    "date": "2021",
+    "github": "https://http://github.com/tristanratz/Interactive-Image-Segmentation"
+  },
+  {
     "name": "Podcast",
     "technologies": ["Object Detection", "NLP", "Deep Learning", "Banking"],
     "description": "You can hear me in a podcast!",
