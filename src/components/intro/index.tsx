@@ -102,7 +102,7 @@ export class Intro extends React.Component<Props, State> {
                         this.nextSection!.scrollIntoView({ behavior: 'smooth', block: 'start' });
                     }}
                     ><IoMdArrowDown /></div>
-                    <video id="background-video" loop autoPlay muted>
+                    <video id="background-video" loop playsInline autoPlay muted>
                         <source src={Titelfilm} type="video/mp4" />
                         <source src={Titelfilm} type="video/ogg" />
                         Your browser does not support the video tag.
