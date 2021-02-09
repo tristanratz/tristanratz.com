@@ -48,7 +48,7 @@ export const person:Person = {
     programs: ["MS Office", "Photoshop", "Affinity Suite"],
     interests: ["Machine Learning", "Natural Language Processing", "Artificial Intelligence"],
     about: [
-        "Currently studying business informatics at the Technical University of Darmstadt.",
+        "Currently studying information systems at the Technical University of Darmstadt.",
 
         "Besides my great commitment to informatics I am very interested in Cloud Computing and the current " +
         "developments in Artificial Intelligence and natural language processing.",
