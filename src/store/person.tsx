@@ -43,7 +43,7 @@ export const person:Person = {
     country: "Germany",
     preferredIdes: ["IntelliJ", "PyCharm", "WebStorm"],
     favTec: ["Python", "git", "Tensorflow", "PyTorch", "Java", "HTML", "CSS", "JavaScript", "React", "Redux",
-        "Amazon Web Services", "Google Cloud"],
+        "Amazon Web Services", "Google Cloud", "WebRTC"],
     operatingSystems: ["macOS", "Ubuntu", "Windows"],
     programs: ["MS Office", "Photoshop", "Affinity Suite"],
     interests: ["Machine Learning", "Natural Language Processing", "Artificial Intelligence"],
@@ -53,9 +53,13 @@ export const person:Person = {
         "Besides my great commitment to informatics I am very interested in Cloud Computing and the current " +
         "developments in Artificial Intelligence and natural language processing.",
 
-        "At the moment employed as a working student at Finanz Informatik Solutions Plus GmbH, which is a " +
-        "direct subsidiary of the information systems service provider of one of Germany's leading " +
-        "financial institutes.",
+        "At the moment I am working on Yacht.Chat, which is a project to connect people working remotly. " +
+        "Using a simple interface Yacht.Chat facilitates exchanging with team members and promotes collaboration. " +
+        "You can learn more about it down below in the projects section and visit the page linked.",
+        
+        //"At the moment employed as a working student at Finanz Informatik Solutions Plus GmbH, which is a " +
+        //"direct subsidiary of the information systems service provider of one of Germany's leading " +
+        //"financial institutes.",
 
         "I am ambitious, curious, a fast learner and a team player, which makes me, besides my experience a perfect " +
         "fit for almost all kinds of projects. Do not hesitate to contact me."

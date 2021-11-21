@@ -1,5 +1,20 @@
 [
   {
+    "name": "Yacht.Chat",
+    "technologies": ["Python", "Tensorflow", "Label Studio", "Computer Vision", "Image Segmentation", "Machine Learning", "Bachelor Thesis"],
+    "description": "In 2021 I wrote a machine learning tool, that provided the user with image segmentation proposals to accelerate the labeling process. The tool was subject of my bachelor thesis.",
+    "text": [
+      "We present Yacht.Chat to you. Yacht.Chat is a digital communication platform that enables real-time collaboration for remotely working teams.",
+      "Unlike existing communication solutions, Yacht.Chat allows each team member to move around freely in a virtual space and adjust their speaking radius. Conversations can emerge spontaneously and adapt to team dynamics.",
+      "Yacht.Chat helps increase information exchange and lets team members feel like a team again. Yacht.Chat combines the collaborative working methods of an office with the advantages of remote work.",
+      "Try it out for free with the link below."
+    ],
+    "language": "en",
+    "image": "none",
+    "date": "2021",
+    "link": "https://www.yacht.chat",
+  },
+  {
     "name": "Interactive Image Segmentation",
     "technologies": ["Python", "Tensorflow", "Label Studio", "Computer Vision", "Image Segmentation", "Machine Learning", "Bachelor Thesis"],
     "description": "In 2021 I wrote a machine learning tool, that provided the user with image segmentation proposals to accelerate the labeling process. The tool was subject of my bachelor thesis.",
