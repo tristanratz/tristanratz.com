@@ -1,5 +1,20 @@
 [
   {
+    "name": "diverSATy",
+    "technologies": [""],
+    "description": "As it turns out... Climate Change is real. It's been there for years. Daily in the news. But its slowly coming to us. To our cities and homes.",
+    "text": [
+      "The lack of green in cities leads to bad water drainage and heat islands. These cause climate related damages which are enormous; In dutch cities alone between 2020-2040 an estimated €33-€87 Billions!",
+      "Less and less space in cities still leave one perfect spot to bring back the green: Our roofs.",
+      "We came up with a service which identifies the most vulnerable and suitable points to install green roofs. With just a matter of clicks we can help green roof installers sell more roofs, insurances reduce risk and municipalities monitor subsidies as well as housing corporations to make the most difference for their buildings and inhabitants.",
+      "Read what the dutch space organisation (NSO) wrote about us down below."
+    ],
+    "language": "en",
+    "image": "none",
+    "date": "2022",
+    "link": "https://www.spaceoffice.nl/nl/nieuws/588/studenten-tu-e-ontwikkelen-prototype-ruimtevaarttoepassing.html"
+  },
+  {
     "name": "Yacht.Chat",
     "technologies": ["React", "WebRTC", "JavaScript", "CSS", "Java", "WebSockets", "Collaboration"],
     "description": "Over the course of the last year we saw the problem, that teams working remotly tend to lose their sense of team spirit. Therefore, we wanted to provide a solution.",
