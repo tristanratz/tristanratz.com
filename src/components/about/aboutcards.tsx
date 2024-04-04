@@ -42,16 +42,6 @@ export const Aboutcards = (props: Props) => (
             </p>
         </Card>
         <Card>
-            <IoMdDesktop />
-            <label>Technologies</label>
-            <p>
-                {person.favTec.map((tec,i) => {
-                    const last = i+1 ===  person.favTec.length;
-                    return (<span key={"favTec" + i}>{tec}{(!last) ? (<span>, </span>) : null}</span>)
-                })}
-            </p>
-        </Card>
-        <Card>
             <IoMdStar />
             <label>Qualities</label>
             <p>
@@ -64,6 +54,16 @@ export const Aboutcards = (props: Props) => (
                     
                     {(!last) ? (<span>,<br /></span>
                     ) : null}</span>)
+                })}
+            </p>
+        </Card>
+        <Card>
+            <IoMdDesktop />
+            <label>Technologies</label>
+            <p>
+                {person.favTec.map((tec,i) => {
+                    const last = i+1 ===  person.favTec.length;
+                    return (<span key={"favTec" + i}>{tec}{(!last) ? (<span>, </span>) : null}</span>)
                 })}
             </p>
         </Card>
