@@ -76,21 +76,8 @@ export class Projects extends React.Component<Props, State> {
     }
 
     whichDirection() {
-        if (this.touchendX < this.touchstartX) console.log( "Swipe nach Links");
-        if (this.touchendX > this.touchstartX) console.log("Swipe nach Rechts");
-    }
-    componentDidMount() {    
-
-        document.querySelector(".swipeDetector")?.addEventListener('touchstart', evt => {
-            this.touchstartX = (evt as TouchEvent).changedTouches[0].screenX;
-            console.log ("touchstartX", this.touchstartX);
-        });
-
-        document.querySelector(".swipeDetector")?.addEventListener('touchend', evt => {
-            this.touchendX = (evt as TouchEvent).changedTouches[0].screenX;
-            console.log ("touchendX", this.touchendX);
-            this.whichDirection()
-        });
+        if (this.touchendX < this.touchstartX) this.handleSwipeEvent("left");
+        if (this.touchendX > this.touchstartX) this.handleSwipeEvent("right");
     }
 
     render(): React.ReactElement {
@@ -102,7 +89,13 @@ export class Projects extends React.Component<Props, State> {
 
         return (
         <div className="projects"  id="projects">
-            <div className="contentWrapper swipeDetector">
+            <div className="contentWrapper"
+                onTouchStart={(e) => this.touchstartX = e.changedTouches[0].screenX}
+                onTouchEnd={(e) => { 
+                    this.touchendX = e.changedTouches[0].screenX;
+                    this.whichDirection();
+                }}
+            >
                 <h1>Projects</h1>
                 <div className="projectsWindow">
                     <div className="projectsWrapper" style={wrapperTransform}>
