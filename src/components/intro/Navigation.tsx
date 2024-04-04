@@ -7,9 +7,11 @@ export class Navigation extends React.Component {
         return (
             <div>
                 <div className="navigation">
-                    <NavigationItem section="about" name="About" />
-                    <NavigationItem section="projects" name="Projects" />
-                    <NavigationItem section="contact" name="Contact" />
+                    <div>
+                        <NavigationItem section="about" name="About" />
+                        <NavigationItem section="projects" name="Projects" />
+                        <NavigationItem section="contact" name="Contact" />
+                    </div>
                     <Icons />
                 </div>
             </div>
