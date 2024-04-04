@@ -112,6 +112,14 @@
 
       .contact {
         font-size: inherit;
+        padding-left: 0;
+      }
+
+      .paragraph {
+        a {
+          padding-left: 0;
+          padding-right: 0.7rem;
+        }
       }
     }
   }

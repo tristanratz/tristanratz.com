@@ -23,12 +23,24 @@ interface Person {
     programs: string[];
     interests: string[];
     about: string[];
+    job: string;
+    employer: string;
+    qualities: string[];
+    languages: {name: string, level: string}[];
 }
 
 export const person:Person = {
     firstName: "Tristan",
     lastName: "Ratz",
+    job: "Generative AI Consultant",
+    employer: "Genow AI",
     image: image,
+    qualities: ["team player", "analytical", "curious", "fast learner"],
+    languages: [
+        {name: "German", level: "native"},
+        {name: "English", level: "C1"},
+        {name: "French", level: "B1-B2"},
+    ],
     email: "contact@tristanratz.com",
     website: "https://tristanratz.com",
     phone: "+49 (0) 6150/1833114",
@@ -42,26 +54,25 @@ export const person:Person = {
     state: "Hesse",
     country: "Germany",
     preferredIdes: ["IntelliJ", "PyCharm", "VS Code"],
-    favTec: ["Python", "git", "Tensorflow", "PyTorch", "Java", "HTML", "CSS", "JavaScript", "React", "Redux",
-        "Amazon Web Services", "Google Cloud", "WebRTC"],
+    favTec: ["Transformers", "Python", "PyTorch", "JavaScript", "React", "Vue",
+        "Amazon Web Services (AWS)", "Google Cloud (GCP)"],
     operatingSystems: ["macOS", "Ubuntu", "Windows"],
     programs: ["MS Office", "Photoshop", "Affinity Suite"],
-    interests: ["Machine Learning", "Natural Language Processing", "Artificial Intelligence"],
+    interests: ["Large Language Models (LLM)", "Natural Language Processing (NLP)", "Artificial Intelligence (AI)", "Retrieval Augmented Generation (RAG)"],
     about: [
-        "Currently studying information systems at the Technical University of Darmstadt.",
+        "Currently working as a Generative AI Consultant at Genow AI.",
 
-        "Besides my great commitment to informatics I am very interested in Cloud Computing and the current " +
-        "developments in Artificial Intelligence and natural language processing.",
+        "After recently finishing my Master's degree in Information Systems at the Technical University of Darmstadt, I wanted to pursue what I had researched during my studies: ",
+        "Natural Language Processing (NLP).",
 
-        "At the moment I am working on Yacht.Chat, which is a project to connect people working remotly. " +
-        "Using a simple interface Yacht.Chat facilitates exchanging with team members and promotes collaboration. " +
-        "You can learn more about it down below in the projects section and visit the page linked.",
+        "I have already gained experience in the field and project management through " +
+        "various internships and working experiences. Just recently I co-authored an exciting role on " +
+        "our work in summary evaluation.",
         
-        //"At the moment employed as a working student at Finanz Informatik Solutions Plus GmbH, which is a " +
-        //"direct subsidiary of the information systems service provider of one of Germany's leading " +
-        //"financial institutes.",
-
         "I am ambitious, curious, a fast learner and a team player, which makes me, besides my experience a perfect " +
-        "fit for almost all kinds of projects. Do not hesitate to contact me."
+        "fit for almost all kinds of projects. Do not hesitate to contact me.",
+        
+        "Besides my great commitment to NLP and the recent developments with LLMs I am eagerly following the recent earth shattering changes in this field " +
+        "and want to be at the forefront of this economy and society changing breakthrough."
     ]
 }
