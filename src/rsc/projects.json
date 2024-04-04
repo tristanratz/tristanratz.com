@@ -1,5 +1,32 @@
 [
   {
+    "name": "Paper: On the Role of Summary Content Units in Text Summarization Evaluation",
+    "technologies": ["NAACL Main Conference 2024", "NLP"],
+    "description": "We conducted research on the role of summary content units in text summarization evaluation. The paper was accepted at the NAACL Main Conference 2024. The code is available on Github.",
+    "text": [
+      "At the heart of the Pyramid evaluation method for text summarization lie human written summary content units (SCUs). These SCUs are concise sentences that decompose a summary into small facts. Such SCUs can be used to judge the quality of a candidate summary, possibly partially automated via natural language inference (NLI) systems. Interestingly, with the aim to fully automate the Pyramid evaluation, Zhang and Bansal (2021) show that SCUs can be approximated by automatically generated semantic role triplets (STUs). However, several questions currently lack answers, in particular: i) Are there other ways of approximating SCUs that can offer advantages? ii) Under which conditions are SCUs (or their approximations) offering the most value?",
+      "In this work, we examine two novel strategies to approximate SCUs: generating SCU approximations from AMR meaning representations (SMUs) and from large language models (SGUs), respectively. We find that while STUs and SMUs are competitive, the best approximation quality is achieved by SGUs. We also show through a simple sentence-decomposition baseline (SSUs) that SCUs (and their approximations) offer the most value when ranking short summaries, but may not help as much when ranking systems or longer summaries."
+    ],
+    "language": "en",
+    "image": "./img/scu.jpg",
+    "date": "2024",
+    "github": "https://github.com/tristanratz/SCU-text-evaluation",
+    "link": "https://arxiv.org/abs/2404.01701"
+  },
+  {
+    "name": "ITRF: Instruction-Tuned Reranker Fine-Tuning",
+    "technologies": ["LLM", "Llama", "NLP", "RAG", "Python"],
+    "description": "During my Thesis I researched ways on how to effectively train rerankers to score better results in retrievel augmented generation (RAG) applications.",
+    "text": [
+      "Large Language Models (LLMs) have emerged as one of the most profound shifts in Natural Language Processing (NLP). While generally applicable they have their shortcomings: Generate content is often hallucinated, there is a lack of provenance and its knowledge is costly to update. Retrieval Augmented Generation (RAG) aims to relieve these issues by providing the LLM with relevant information.",
+      "In this work we establish a retrieval corpus, build a RAG pipeline, fine-tune a language model on task specific data in a parameter efficient way to extract knowledge from provided contexts and subsequently train a reranker to predict the probability a document is going to help the LLM generate the right answer on 25 datasets. We establish five distinct pipelines which we evaluate on faithfulness, answer relevancy, answer semantic similarity, context recall and context relevancy. We find that a out of the box pre-trained reranker in combination with our fine-tuned model works best on a range of scores, with a third-party LLM with our reranker provides the answer most closely to the ground truth. The code and models are available open source."
+    ],
+    "language": "en",
+    "image": "./img/thesis.jpg",
+    "date": "2024",
+    "github": "https://github.com/tristanratz/ITRF"
+  },
+  {
     "name": "diverSATy",
     "technologies": [""],
     "description": "As it turns out... Climate Change is real. It's been there for years. Daily in the news. But its slowly coming to us. To our cities and homes.",
@@ -10,12 +37,12 @@
       "Read what the dutch space organisation (NSO) wrote about us down below."
     ],
     "language": "en",
-    "image": "none",
+    "image": "./img/green_roofs.jpg",
     "date": "2022",
     "link": "https://www.spaceoffice.nl/nl/nieuws/588/studenten-tu-e-ontwikkelen-prototype-ruimtevaarttoepassing.html"
   },
   {
-    "name": "Yacht.Chat",
+    "name": "Yacht.Chat: Your Virtual Office",
     "technologies": ["React", "WebRTC", "JavaScript", "CSS", "Java", "WebSockets", "Collaboration"],
     "description": "Over the course of the last year we saw the problem, that teams working remotly tend to lose their sense of team spirit. Therefore, we wanted to provide a solution.",
     "text": [
@@ -25,7 +52,7 @@
       "Try it out for free with the link below."
     ],
     "language": "en",
-    "image": "none",
+    "image": "./img/yacht.png",
     "date": "2021",
     "link": "https://www.yacht.chat"
   },
@@ -40,7 +67,7 @@
       "In summary, I successfully developed an open-source, instance segmentation, interactive labeling extension for Label Studio that decreases labeling time and provides the user with a working Mask R-CNN model.",
       "The source code is available on GitHub."],
     "language": "en",
-    "image": "none",
+    "image": "./img/imagesegmentation.jpg",
     "date": "2021",
     "github": "https://github.com/tristanratz/Interactive-Image-Segmentation"
   },
@@ -53,7 +80,7 @@
       "I will tell you about the technologies we have used, our view on privacy and more in our podcast.",
       "The podcast is available on german on all major platforms, including Apple Podcast, Google Podcast and Spotify."],
     "language": "en",
-    "image": "none",
+    "image": "./img/podcast.jpg",
     "date": "2020",
     "link": "https://anchor.fm/kixperts/episodes/04-KI-Fotofinanzierung-mit-Tobias--Stephan-und-Tristan-eipguk/a-a32frr8"
   },
@@ -65,7 +92,7 @@
       "During the process of hosting the site I gained my first experiences with Amazon Web Services and set up my Lightsail instance with Nginx, a MailServer and Weblog Analytics.",
       "This project gave me a strong basis to work on further web projects."],
     "language": "en",
-    "image": "none",
+    "image": "./img/website.jpg",
     "date": "2020",
     "github": "https://github.com/tristanratz/React-Template"
   },
@@ -78,7 +105,7 @@
       "During the project we had to explore NLP, Tensorflow, NLTK and other technologies to build a working solution. As a result we were able to generate answers to questions on a given database in multiple languages.",
       "Our system was working more accurate and even faster than existing solutions (like cdQA by PNB Paribas)."],
     "language": "en",
-    "image": "none",
+    "image": "./img/qa.jpg",
     "date": "2019",
     "link": "https://medium.com/@tristanratz/building-a-question-answering-system-bb49c320140c"
   },
@@ -90,7 +117,7 @@
       "To see the project page on Github click on the link down below."
     ],
     "language": "en",
-    "image": "none",
+    "image": "./img/chatapp.jpg",
     "date": "2019",
     "github": "https://github.com/tristanratz/chatapp"
   },
@@ -100,7 +127,7 @@
     "description": "Besides creating a website with my own CMS, I also created a corporate identity for a medical private practice.",
     "text": ["The website (link below) was build on top of my previous project (CMS) and operates with it until today. I also created the corporate design for flyers, business cards and signs in the building."],
     "language": "en",
-    "image": "none",
+    "image": "./img/ugg.jpg",
     "date": "2016",
     "link": "http://uro-gross-gerau.de/"
   },
@@ -112,7 +139,7 @@
     "The CMS was graded with the best grade in the german system."
     ],
     "language": "en",
-    "image": "none",
+    "image": "./img/bll.jpeg",
     "date": "2015"
   },
   {
@@ -121,7 +148,7 @@
     "description": "A website for a medical office build with Wordpress.",
     "text": ["It was the first project I created using wordpress. I implemented my own wordpress theme and setup the website using wordpress. You can look at the resulting website at the link down below."],
     "language": "en",
-    "image": "none",
+    "image": "./img/code.png",
     "date": "2014",
     "link": "http://uro-reinheim.de/"
   }
