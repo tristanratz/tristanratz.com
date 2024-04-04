@@ -2,7 +2,7 @@ import React from "react";
 import "./style.scss"
 import Fade from "react-reveal/Fade";
 
-export class Card extends React.Component {
+export class Card extends React.Component<{children: JSX.Element[]}> {
 
     render(): React.ReactElement {
         return (

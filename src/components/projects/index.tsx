@@ -3,7 +3,6 @@ import "./style.scss";
 import {getProjects} from "../../store/projects";
 import {Project} from "./project";
 import {ProjectNavigation} from "./projectNavigation";
-import {Swipeable} from "react-swipeable";
 
 interface State {
     openElement: number; // With content teext beeing shown. Must be -1 or activeElement
@@ -17,6 +16,8 @@ export type ClickEvent = "open"|"close"|"click";
 export class Projects extends React.Component<Props, State> {
 
     state: State
+    touchstartX = 0
+    touchendX = 0
 
     constructor(props: Props) {
         super(props);
@@ -74,6 +75,24 @@ export class Projects extends React.Component<Props, State> {
         }
     }
 
+    whichDirection() {
+        if (this.touchendX < this.touchstartX) console.log( "Swipe nach Links");
+        if (this.touchendX > this.touchstartX) console.log("Swipe nach Rechts");
+    }
+    componentDidMount() {    
+
+        document.querySelector(".swipeDetector")?.addEventListener('touchstart', evt => {
+            this.touchstartX = (evt as TouchEvent).changedTouches[0].screenX;
+            console.log ("touchstartX", this.touchstartX);
+        });
+
+        document.querySelector(".swipeDetector")?.addEventListener('touchend', evt => {
+            this.touchendX = (evt as TouchEvent).changedTouches[0].screenX;
+            console.log ("touchendX", this.touchendX);
+            this.whichDirection()
+        });
+    }
+
     render(): React.ReactElement {
         const projects = getProjects();
 
@@ -83,10 +102,7 @@ export class Projects extends React.Component<Props, State> {
 
         return (
         <div className="projects"  id="projects">
-            <Swipeable
-                onSwipedLeft={() => this.handleSwipeEvent("left")}
-                onSwipedRight={() => this.handleSwipeEvent("right")}>
-            <div className="contentWrapper">
+            <div className="contentWrapper swipeDetector">
                 <h1>Projects</h1>
                 <div className="projectsWindow">
                     <div className="projectsWrapper" style={wrapperTransform}>
@@ -98,7 +114,6 @@ export class Projects extends React.Component<Props, State> {
                 </div>
                 <ProjectNavigation projects={projects} active={this.state.activeElement} onClick={this.handleClickEvent} />
             </div>
-            </Swipeable>
         </div>);
     }
 }

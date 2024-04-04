@@ -35,7 +35,8 @@ export class Project extends React.Component<Props> {
         });
 
         const backgroundImg = {
-            background: (this.props.project.image) ? `url(${this.props.project.image})` : "transparent",
+            backgroundColor: "transparent",
+            backgroundImage: (this.props.project.image) ? `url(${this.props.project.image})` : "none",
         }
 
         return (
