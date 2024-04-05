@@ -66,13 +66,12 @@ export const person:Person = {
         "Natural Language Processing (NLP).",
 
         "I have already gained experience in the field and project management through " +
-        "various internships and working experiences. Just recently I co-authored an exciting role on " +
-        "our work in summary evaluation.",
+        "various internships and working experiences. " +
+        "Just recently I co-authored an exciting work on how to evluate summaries.",
         
-        "I am ambitious, curious, a fast learner and a team player, which makes me, besides my experience a perfect " +
-        "fit for almost all kinds of projects. Do not hesitate to contact me.",
+        "I am ambitious, curious, a fast learner, and a team player, which makes me, besides my experience, a perfect fit for almost all kinds of projects. Do not hesitate to contact me.",
         
-        "Besides my great commitment to NLP and the recent developments with LLMs I am eagerly following the recent earth shattering changes in this field " +
+        "Besides my great commitment to NLP and recent developments with LLMs I am eagerly following the recent earth shattering changes in this field " +
         "and want to be at the forefront of this economy and society changing breakthrough."
     ]
 }
