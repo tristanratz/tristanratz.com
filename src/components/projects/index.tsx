@@ -18,6 +18,8 @@ export class Projects extends React.Component<Props, State> {
     state: State
     touchstartX = 0
     touchendX = 0
+    touchstartY = 0
+    touchendY = 0
 
     constructor(props: Props) {
         super(props);
@@ -76,8 +78,10 @@ export class Projects extends React.Component<Props, State> {
     }
 
     whichDirection() {
-        if (this.touchendX < this.touchstartX) this.handleSwipeEvent("left");
-        if (this.touchendX > this.touchstartX) this.handleSwipeEvent("right");
+        // const margin = 70;
+        const margin = Math.abs(this.touchstartY-this.touchendY);
+        if (this.touchendX < this.touchstartX && this.touchstartX-this.touchendX > margin) this.handleSwipeEvent("left");
+        if (this.touchendX > this.touchstartX && this.touchendX-this.touchstartX > margin) this.handleSwipeEvent("right");
     }
 
     render(): React.ReactElement {
@@ -90,9 +94,13 @@ export class Projects extends React.Component<Props, State> {
         return (
         <div className="projects"  id="projects">
             <div className="contentWrapper"
-                onTouchStart={(e) => this.touchstartX = e.changedTouches[0].screenX}
+                onTouchStart={(e) => {
+                    this.touchstartX = e.changedTouches[0].screenX
+                    this.touchstartY = e.changedTouches[0].screenY
+                }}
                 onTouchEnd={(e) => { 
                     this.touchendX = e.changedTouches[0].screenX;
+                    this.touchendY = e.changedTouches[0].screenY;
                     this.whichDirection();
                 }}
             >
